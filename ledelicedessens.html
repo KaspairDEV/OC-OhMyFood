@@ -1,183 +1,187 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
     </style>
-    <script src="https://kit.fontawesome.com/71b3eae33a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="sass/main.css">
+    <script
+      src="https://kit.fontawesome.com/71b3eae33a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="sass/main.css" />
     <title>Oh my food</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <a href="index.html">
-                <i class="fas fa-arrow-left"></i>
-            </a>
-        </nav>
-        <div id="logo">
-            <a href="">
-                <img src="./img/logo/ohmyfood.png" alt="Logo du site">
-            </a>
-        </div>
+      <nav>
+        <a href="index.html">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+      </nav>
+      <div id="logo">
+        <a href="index.html">
+          <img src="./img/logo/ohmyfood.png" alt="Logo du site" />
+        </a>
+      </div>
     </header>
     <!-- Main section -->
     <div id="main-container">
-        <img src="./img/restaurants/menu4.jpg" alt="Une photo d'un plat du restaurant Le délice des sens">
-        <!-- main section -->
-        <main>
-            <div class="restaurant-name">
-                <h1>Le délice des sens</h1>
-                <i class="far fa-heart"></i>
+      <img
+        src="./img/restaurants/menu4.jpg"
+        alt="Une photo d'un plat du restaurant Le délice des sens"
+      />
+      <!-- main section -->
+      <main>
+        <div class="restaurant-name">
+          <h1>Le délice des sens</h1>
+          <i class="far fa-heart"></i>
+        </div>
+        <!-- sections wrapper -->
+        <div class="sections-wrapper">
+          <!-- Entrées section -->
+          <section id="entrees">
+            <h2>Entrées</h2>
+            <div class="card animation-card1">
+              <h3>Tartare de thon</h3>
+              <p>Assaisonné au yuzu</p>
+              <strong>25€</strong>
+              <div class="fa-check-container">
+                <div class="fa-check-bg">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
             </div>
-            <!-- sections wrapper -->
-            <div class="sections-wrapper">
-                <!-- Entrées section -->
-                <section id="entrees">
-                    <h2>Entrées</h2>
-                    <div class="card animation-card1">
-                        <h3>Tartare de thon</h3>
-                        <p>Assaisonné au yuzu</p>
-                        <strong>25€</strong>
-                        <div class="fa-check-container">
-                            <div class="fa-check-bg">
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card animation-card2">
-                        <h3>Bouchée de homard croustillant</h3>
-                        <p>Et sa farandole de petits légumes</p>
-                        <strong>35€</strong>
-                        <div class="fa-check-container">
-                            <div class="fa-check-bg">
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card animation-card3">
-                        <h3>Velouté de cèpes</h3>
-                        <p>Aux truffes</p>
-                        <strong>20€</strong>
-                        <div class="fa-check-container">
-                            <div class="fa-check-bg">
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Plats section -->
-                <section id="plats">
-                    <h2>Plats</h2>
-                    <div class="card animation-card4">
-                        <h3>Poulet rôti aux herbes de Provence</h3>
-                        <p>Et sa crème de truffe</p>
-                        <strong>40€</strong>
-                        <div class="fa-check-container">
-                            <div class="fa-check-bg">
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card animation-card5">
-                        <h3>Langouste rôti</h3>
-                        <p>Et ses légumes de saison</p>
-                        <strong>35€</strong>
-                        <div class="fa-check-container">
-                            <div class="fa-check-bg">
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card animation-card6">
-                        <h3>Côte de boeuf Angus</h3>
-                        <p>Et sa purée de panais</p>
-                        <strong>44€</strong>
-                        <div class="fa-check-container">
-                            <div class="fa-check-bg">
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Desserts section -->
-                <section id="desserts">
-                    <h2>Desserts</h2>
-                    <div class="card animation-card7">
-                        <h3>Farandole de desserts</h3>
-                        <p>Du chef</p>
-                        <strong>18€</strong>
-                        <div class="fa-check-container">
-                            <div class="fa-check-bg">
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card animation-card8">
-                        <h3>Crème brulée</h3>
-                        <p>Revisité</p>
-                        <strong>22€</strong>
-                        <div class="fa-check-container">
-                            <div class="fa-check-bg">
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card animation-card9">
-                        <h3>Tiramisu</h3>
-                        <p>À la noisette</p>
-                        <strong>23€</strong>
-                        <div class="fa-check-container">
-                            <div class="fa-check-bg">
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            <div class="card animation-card2">
+              <h3>Bouchée de homard croustillant</h3>
+              <p>Et sa farandole de petits légumes</p>
+              <strong>35€</strong>
+              <div class="fa-check-container">
+                <div class="fa-check-bg">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
             </div>
-            <div class="btn-container">
-                <button>Commander</button>
+            <div class="card animation-card3">
+              <h3>Velouté de cèpes</h3>
+              <p>Aux truffes</p>
+              <strong>20€</strong>
+              <div class="fa-check-container">
+                <div class="fa-check-bg">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
             </div>
-        </main>
+          </section>
+          <!-- Plats section -->
+          <section id="plats">
+            <h2>Plats</h2>
+            <div class="card animation-card4">
+              <h3>Poulet rôti aux herbes de Provence</h3>
+              <p>Et sa crème de truffe</p>
+              <strong>40€</strong>
+              <div class="fa-check-container">
+                <div class="fa-check-bg">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card animation-card5">
+              <h3>Langouste rôti</h3>
+              <p>Et ses légumes de saison</p>
+              <strong>35€</strong>
+              <div class="fa-check-container">
+                <div class="fa-check-bg">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card animation-card6">
+              <h3>Côte de boeuf Angus</h3>
+              <p>Et sa purée de panais</p>
+              <strong>44€</strong>
+              <div class="fa-check-container">
+                <div class="fa-check-bg">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Desserts section -->
+          <section id="desserts">
+            <h2>Desserts</h2>
+            <div class="card animation-card7">
+              <h3>Farandole de desserts</h3>
+              <p>Du chef</p>
+              <strong>18€</strong>
+              <div class="fa-check-container">
+                <div class="fa-check-bg">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card animation-card8">
+              <h3>Crème brulée</h3>
+              <p>Revisité</p>
+              <strong>22€</strong>
+              <div class="fa-check-container">
+                <div class="fa-check-bg">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card animation-card9">
+              <h3>Tiramisu</h3>
+              <p>À la noisette</p>
+              <strong>23€</strong>
+              <div class="fa-check-container">
+                <div class="fa-check-bg">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="btn-container">
+          <button>Commander</button>
+        </div>
+      </main>
     </div>
     <!-- footer section -->
     <footer>
-        <a href="#logo">
-            <img src="./img/logo/ohmyfoodcolor@2xcopie.svg" alt="Logo du site">
-        </a>
-        <div class="wrapper">
-            <div class="footer-list">
-                <a href="#">
-                    <i class="fas fa-utensils"></i>
-                    <small>Proposer un restaurant</small>
-                </a>
-            </div>
-            <div class="footer-list">
-                <a href="">
-                    <i class="fas fa-hands-helping"></i>
-                    <small>Devenir partenaire</small>
-                </a>
-            </div>
-            <div class="footer-list">
-                <a href="#">
-                    <small>Mentions légales</small>
-                </a>
-            </div>
-            <div class="footer-list">
-                <address>
-                    <a href="mailto:kaspair974@gmail.com">
-                        <small>Contact</small>
-                    </a>
-                </address>
-            </div>
+      <a href="#logo">
+        <img src="./img/logo/ohmyfoodcolor@2xcopie.svg" alt="Logo du site" />
+      </a>
+      <div class="wrapper">
+        <div class="footer-list">
+          <a href="#">
+            <i class="fas fa-utensils"></i>
+            <small>Proposer un restaurant</small>
+          </a>
         </div>
+        <div class="footer-list">
+          <a href="">
+            <i class="fas fa-hands-helping"></i>
+            <small>Devenir partenaire</small>
+          </a>
+        </div>
+        <div class="footer-list">
+          <a href="#">
+            <small>Mentions légales</small>
+          </a>
+        </div>
+        <div class="footer-list">
+          <address>
+            <a href="mailto:kaspair974@gmail.com">
+              <small>Contact</small>
+            </a>
+          </address>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
