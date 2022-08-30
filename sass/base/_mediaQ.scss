@@ -7,13 +7,20 @@
   }
 }
 @media screen and (max-width: 820px) {
-  .menus .menus__card {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 25px;
+  .tuto {
+    padding: 0 1rem;
+  }
+  .menus {
+    padding: 1rem 1rem;
+
+    & .menus__card {
+      display: grid;
+      width: 100%;
+      height: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 25px;
+    }
   }
 }
 @media screen and (min-width: 768px) {
