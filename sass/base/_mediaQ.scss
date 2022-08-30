@@ -7,6 +7,9 @@
   }
 }
 @media screen and (max-width: 820px) {
+  #main-container main {
+    width: auto;
+  }
   .tuto {
     padding: 0 1rem;
   }
