@@ -1,0 +1,273 @@
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.fa-arrow-left {
+  position: absolute;
+  left: 40px;
+  top: 25px;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+header #logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  img {
+    height: 35px;
+  }
+}
+
+#main-container {
+  img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    position: absolute;
+    top: 70px;
+    z-index: -1;
+  }
+  main {
+    width: 97.9%;
+    background-color: #f6f6f6;
+    padding: 30px 15px 50px 15px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    margin-top: 230px;
+    z-index: 1;
+    .restaurant-name {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1 {
+        font-family: "shrikhand", cursive;
+        font-size: 1.7rem;
+      }
+      .fa-heart {
+        font-size: 1.6rem;
+        cursor: pointer;
+        transition: color 600ms linear;
+        margin-right: 2rem;
+      }
+    }
+    .sections-wrapper {
+      .animation-card1 {
+        animation: fadein 2s forwards;
+      }
+      .animation-card2 {
+        animation: fadein 2s 0.2s forwards;
+      }
+
+      .animation-card3 {
+        animation: fadein 2s 0.4s forwards;
+      }
+
+      .animation-card4 {
+        animation: fadein 2s 0.6s forwards;
+      }
+
+      .animation-card5 {
+        animation: fadein 2s 0.8s forwards;
+      }
+
+      .animation-card6 {
+        animation: fadein 2s 1s forwards;
+      }
+
+      .animation-card7 {
+        animation: fadein 2s 1.2s forwards;
+      }
+
+      .animation-card8 {
+        animation: fadein 2s 1.4s forwards;
+      }
+
+      .animation-card9 {
+        animation: fadein 2s 1.6s forwards;
+      }
+      .animation-card10 {
+        animation: fadein 2s 1.8s forwards;
+      }
+      .card h3 {
+        margin-bottom: 5px;
+        width: 80%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transition: width 500ms;
+      }
+      h3 {
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+      }
+      @keyframes fadein {
+        0% {
+          opacity: 0;
+          transform: translateY(15px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+      h2 {
+        margin-top: 35px;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+      .card {
+        background-color: #fff;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 20px;
+        font-weight: 600;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        opacity: 0;
+        box-shadow: 0px 5px 18px -7px #bbb;
+
+        h3 {
+          margin-bottom: 5px;
+          text-overflow: ellipsis;
+          transition: width 500ms;
+        }
+
+        p {
+          font-weight: 300;
+          display: inline-block;
+          text-overflow: ellipsis;
+          transition: width 500ms;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+
+        strong {
+          float: right;
+          margin-right: 5px;
+          transition: transform 500ms;
+        }
+        .fa-check-container {
+          background-color: #99e2d0;
+          position: absolute;
+          right: -80px;
+          top: 0;
+          height: 100%;
+          width: 80px;
+          border-radius: 0 20px 20px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: transform 500ms;
+          .fa-check-bg {
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .fa-check {
+              color: #99e2d0;
+              font-size: 13px;
+              transition: transform 500ms;
+            }
+            & .fa-check:before {
+              content: "\f00c";
+            }
+          }
+        }
+        &:hover {
+          .fa-check-container {
+            transform: translateX(-70px);
+            .fa-check {
+              transform: rotate(2turn);
+            }
+          }
+          strong {
+            transform: translateX(-70px);
+          }
+          h3,
+          p {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+#main-container main {
+  .btn-container {
+    margin-top: 50px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: btn_fadein 2s 2s forwards;
+    @keyframes btn_fadein {
+      from {
+        opacity: 0%;
+        width: 0%;
+      }
+      to {
+        opacity: 100%;
+        width: 100%;
+      }
+    }
+    button {
+      padding: 18px;
+      border-radius: 30px;
+      font-weight: 500;
+      border: none;
+      background: -webkit-linear-gradient(to left top, #9356dc, #ff79da);
+      background: -moz-linear-gradient(to left top, #9356dc, #ff79da);
+      background: linear-gradient(to left top, #9356dc, #ff79da);
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0px 5px 10px #bbb;
+      transition: background 900ms, box-shadow 500ms;
+      padding: 18px 60px;
+      &:hover {
+        background: -webkit-linear-gradient(
+          to left top,
+          lighten(#9356dc, 5%),
+          lighten(#ff79da, 5%)
+        );
+        background: -moz-linear-gradient(
+          to left top,
+          lighten(#9356dc, 5%),
+          lighten(#ff79da, 5%)
+        );
+        background: linear-gradient(
+          to left top,
+          lighten(#9356dc, 5%),
+          lighten(#ff79da, 5%)
+        );
+        box-shadow: 0px 5px 10px darken(#bbb, 20%);
+      }
+    }
+  }
+}

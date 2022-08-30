@@ -1,0 +1,19 @@
+footer {
+  background-color: #353535;
+  padding: 1.8rem;
+  font-size: 1rem;
+  font-weight: normal;
+  & img {
+    height: 20px;
+
+    margin-bottom: 20px;
+  }
+  & .footer-list {
+    padding-bottom: 10px;
+    & a {
+      color: #fff;
+      font-style: normal;
+      font-size: larger;
+    }
+  }
+}

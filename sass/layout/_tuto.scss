@@ -1,0 +1,42 @@
+.tuto {
+  padding: 0 7rem;
+  counter-reset: step;
+  padding-bottom: 2rem;
+}
+.tuto h2 {
+  padding-bottom: 1rem;
+}
+.tuto ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.tuto li {
+  background-color: #f6f6f6;
+  padding: 1.5rem 2rem;
+  flex-grow: 1;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 7px -3px black;
+  list-style-type: none;
+  position: relative;
+}
+.tuto li::before {
+  content: counter(step);
+  counter-increment: step;
+  color: white;
+  background-color: #9356dc;
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -1rem;
+}
+.tuto li i {
+  margin-right: 1rem;
+  color: #7e7e7e;
+}
