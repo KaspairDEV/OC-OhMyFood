@@ -514,4 +514,11 @@ header #logo img {
     grid-gap: 1rem;
     margin-right: 25px;
   }
+}
+@media screen and (min-width: 480px) {
+  footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+  }
 }/*# sourceMappingURL=main.css.map */
