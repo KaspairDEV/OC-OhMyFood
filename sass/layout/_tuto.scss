@@ -19,7 +19,14 @@
   box-shadow: 2px 1px 7px -3px black;
   list-style-type: none;
   position: relative;
+  &:hover {
+    background-color: #f5edff;
+    & i {
+      color: #9356dc;
+    }
+  }
 }
+
 .tuto li::before {
   content: counter(step);
   counter-increment: step;
