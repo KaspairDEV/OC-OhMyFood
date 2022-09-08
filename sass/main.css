@@ -261,7 +261,7 @@ a:hover {
   font-size: 1.6rem;
   right: 20px;
   top: 20px;
-  transition: color 600ms linear;
+  transition: all 500ms cubic-bezier(0, 0.57, 0.97, 1.2);
 }
 .restaurant-details small {
   position: absolute;
@@ -274,14 +274,54 @@ a:hover {
 }
 
 .fa-heart:hover {
-  background: linear-gradient(#9356dc, #ff79da);
+  background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   font-weight: 600;
   color: transparent;
-  -webkit-animation: scale 3s forwards;
-          animation: scale 3s forwards;
+  -webkit-animation: animateHeart 1.2s infinite;
+          animation: animateHeart 1.2s infinite;
+}
+@-webkit-keyframes animateHeart {
+  0% {
+    transform: rotate(0deg) scale(1.4);
+  }
+  5% {
+    transform: rotate(0deg) scale(1.5);
+  }
+  10% {
+    transform: rotate(0deg) scale(1.4);
+  }
+  15% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(0deg) scale(1.4);
+  }
+  100% {
+    transform: rotate(0deg) scale(1.5);
+  }
+}
+@keyframes animateHeart {
+  0% {
+    transform: rotate(0deg) scale(1.4);
+  }
+  5% {
+    transform: rotate(0deg) scale(1.5);
+  }
+  10% {
+    transform: rotate(0deg) scale(1.4);
+  }
+  15% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(0deg) scale(1.4);
+  }
+  100% {
+    transform: rotate(0deg) scale(1.5);
+  }
 }
 
 footer {
@@ -369,7 +409,7 @@ header #logo img {
 #main-container main .restaurant-name .fa-heart {
   font-size: 1.6rem;
   cursor: pointer;
-  transition: color 600ms linear;
+  transition: all 500ms cubic-bezier(0, 0.57, 0.97, 1.2);
   margin-right: 2rem;
 }
 #main-container main .sections-wrapper .animation-card1 {

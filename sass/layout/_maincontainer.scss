@@ -62,7 +62,7 @@ header #logo {
       .fa-heart {
         font-size: 1.6rem;
         cursor: pointer;
-        transition: color 600ms linear;
+        transition: all 500ms cubic-bezier(0, 0.57, 0.97, 1.2);
         margin-right: 2rem;
       }
     }

@@ -50,7 +50,7 @@
     font-size: 1.6rem;
     right: 20px;
     top: 20px;
-    transition: color 600ms linear;
+    transition: all 500ms cubic-bezier(0, 0.57, 0.97, 1.2);
   }
   & small {
     position: absolute;
@@ -64,13 +64,33 @@
 }
 
 .fa-heart:hover {
-  background: -webkit-linear-gradient(#9356dc, #ff79da);
-  background: -moz-linear-gradient(#9356dc, #ff79da);
-  background: linear-gradient(#9356dc, #ff79da);
+  background: -webkit-linear-gradient(#ff79da, #9356dc);
+  background: -moz-linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   font-weight: 600;
   color: transparent;
-  animation: scale 3s forwards;
+  animation: animateHeart 1.2s infinite;
+  @keyframes animateHeart {
+    0% {
+      transform: rotate(0deg) scale(1.4);
+    }
+    5% {
+      transform: rotate(0deg) scale(1.5);
+    }
+    10% {
+      transform: rotate(0deg) scale(1.4);
+    }
+    15% {
+      transform: rotate(0deg) scale(1.2);
+    }
+    50% {
+      transform: rotate(0deg) scale(1.4);
+    }
+    100% {
+      transform: rotate(0deg) scale(1.5);
+    }
+  }
 }
