@@ -190,10 +190,10 @@ a:hover {
   color: white;
   background-color: #9356dc;
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 2rem;
   height: 2rem;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -370,8 +370,8 @@ a:hover {
 
 header #logo {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 2rem;
 }
 header #logo img {
@@ -537,8 +537,8 @@ header #logo img {
   width: 80px;
   border-radius: 0 20px 20px 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   transition: transform 500ms;
 }
 #main-container main .sections-wrapper .card .fa-check-container .fa-check-bg {
@@ -547,8 +547,8 @@ header #logo img {
   border-radius: 50%;
   background-color: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 #main-container main .sections-wrapper .card .fa-check-container .fa-check-bg .fa-check {
   color: #99e2d0;
@@ -576,8 +576,8 @@ header #logo img {
   margin-top: 50px;
   opacity: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   -webkit-animation: btn_fadein 2s 2s forwards;
           animation: btn_fadein 2s 2s forwards;
 }
@@ -647,18 +647,16 @@ header #logo img {
   }
 }
 @media screen and (min-width: 768px) {
-  footer .wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: initial;
-  }
-}
-@media screen and (min-width: 768px) {
   main .sections-wrapper {
     display: grid;
     grid-template: 33.3%/repeat(3, 33.3%);
     grid-gap: 1rem;
     margin-right: 25px;
+  }
+  footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
   }
 }
 @media screen and (min-width: 480px) {

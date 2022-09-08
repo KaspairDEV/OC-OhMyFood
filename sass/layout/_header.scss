@@ -10,9 +10,7 @@ main .city {
   background-color: #eaeaea;
   text-align: center;
   padding: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexcenter;
   gap: 1rem;
   & i {
     font-size: 1.5rem;

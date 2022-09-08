@@ -22,7 +22,7 @@
   &:hover {
     background-color: #f5edff;
     & i {
-      color: #9356dc;
+      color: $purple;
     }
   }
 }
@@ -31,12 +31,10 @@
   content: counter(step);
   counter-increment: step;
   color: white;
-  background-color: #9356dc;
-  display: flex;
+  background-color: $purple;
+  @include flexcenter;
   width: 2rem;
   height: 2rem;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
   position: absolute;
   top: 50%;

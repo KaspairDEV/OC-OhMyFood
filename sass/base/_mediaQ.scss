@@ -1,4 +1,4 @@
-@media screen and (max-width: 950px) {
+@include desktopandhigher {
   .br_section_p {
     display: block;
   }
@@ -6,7 +6,7 @@
     flex-direction: column;
   }
 }
-@media screen and (max-width: 820px) {
+@include tablet-to-desktop {
   #main-container main {
     width: auto;
   }
@@ -26,22 +26,21 @@
     }
   }
 }
-@media screen and (min-width: 768px) {
-  footer .wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: initial;
-  }
-}
-@media screen and (min-width: 768px) {
+
+@include phone-to-tablet {
   main .sections-wrapper {
     display: grid;
     grid-template: 33.3% / repeat(3, 33.3%);
     grid-gap: 1rem;
     margin-right: 25px;
   }
+  footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+  }
 }
-@media screen and (min-width: 480px) {
+@include phone {
   footer .wrapper {
     display: flex;
     justify-content: space-between;

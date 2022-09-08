@@ -24,9 +24,7 @@ a {
 }
 
 header #logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexcenter;
   height: 2rem;
   img {
     height: 35px;
@@ -177,18 +175,14 @@ header #logo {
           height: 100%;
           width: 80px;
           border-radius: 0 20px 20px 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include flexcenter;
           transition: transform 500ms;
           .fa-check-bg {
             width: 23px;
             height: 23px;
             border-radius: 50%;
             background-color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flexcenter;
             .fa-check {
               color: #99e2d0;
               font-size: 13px;
@@ -222,9 +216,7 @@ header #logo {
   .btn-container {
     margin-top: 50px;
     opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexcenter;
     animation: btn_fadein 2s 2s forwards;
     @keyframes btn_fadein {
       from {
@@ -241,9 +233,9 @@ header #logo {
       border-radius: 30px;
       font-weight: 500;
       border: none;
-      background: -webkit-linear-gradient(to left top, #9356dc, #ff79da);
-      background: -moz-linear-gradient(to left top, #9356dc, #ff79da);
-      background: linear-gradient(to left top, #9356dc, #ff79da);
+      background: -webkit-linear-gradient(to left top, $purple, $pink);
+      background: -moz-linear-gradient(to left top, $purple, $pink);
+      background: linear-gradient(to left top, $purple, $pink);
       color: #fff;
       font-size: 1rem;
       cursor: pointer;
@@ -253,18 +245,18 @@ header #logo {
       &:hover {
         background: -webkit-linear-gradient(
           to left top,
-          lighten(#9356dc, 5%),
-          lighten(#ff79da, 5%)
+          lighten($purple, 5%),
+          lighten($pink, 5%)
         );
         background: -moz-linear-gradient(
           to left top,
-          lighten(#9356dc, 5%),
-          lighten(#ff79da, 5%)
+          lighten($purple, 5%),
+          lighten($pink, 5%)
         );
         background: linear-gradient(
           to left top,
-          lighten(#9356dc, 5%),
-          lighten(#ff79da, 5%)
+          lighten($purple, 5%),
+          lighten($pink, 5%)
         );
         box-shadow: 0px 5px 10px darken(#bbb, 20%);
       }
