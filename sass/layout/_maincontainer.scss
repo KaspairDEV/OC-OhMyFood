@@ -199,13 +199,13 @@ header #logo {
         }
         &:hover {
           .fa-check-container {
-            transform: translateX(-70px);
+            transform: translateX(-80px);
             .fa-check {
               transform: rotate(2turn);
             }
           }
           strong {
-            transform: translateX(-70px);
+            transform: translateX(-80px);
           }
           h3,
           p {

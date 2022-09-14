@@ -564,13 +564,13 @@ header #logo img {
   content: "\f00c";
 }
 #main-container main .sections-wrapper .card:hover .fa-check-container {
-  transform: translateX(-70px);
+  transform: translateX(-80px);
 }
 #main-container main .sections-wrapper .card:hover .fa-check-container .fa-check {
   transform: rotate(2turn);
 }
 #main-container main .sections-wrapper .card:hover strong {
-  transform: translateX(-70px);
+  transform: translateX(-80px);
 }
 #main-container main .sections-wrapper .card:hover h3,
 #main-container main .sections-wrapper .card:hover p {
