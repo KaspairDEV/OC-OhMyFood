@@ -503,7 +503,6 @@ header #logo img {
 }
 #main-container main .sections-wrapper .card {
   background-color: #fff;
-  padding: 15px;
   margin-bottom: 15px;
   border-radius: 20px;
   font-weight: 600;
@@ -514,11 +513,14 @@ header #logo img {
   box-shadow: 0px 5px 18px -7px #bbb;
 }
 #main-container main .sections-wrapper .card h3 {
+  padding-left: 1rem;
   margin-bottom: 5px;
   text-overflow: ellipsis;
   transition: width 500ms;
 }
 #main-container main .sections-wrapper .card p {
+  padding-left: 1rem;
+  margin-top: 0;
   font-weight: 300;
   display: inline-block;
   text-overflow: ellipsis;
@@ -528,7 +530,7 @@ header #logo img {
 }
 #main-container main .sections-wrapper .card strong {
   float: right;
-  margin-right: 5px;
+  margin-right: 1.5rem;
   transition: transform 500ms;
 }
 #main-container main .sections-wrapper .card .fa-check-container {
