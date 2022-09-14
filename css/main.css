@@ -378,6 +378,7 @@ header #logo {
 }
 header #logo img {
   height: 35px;
+  padding-top: 0.8rem;
 }
 
 #main-container img {
