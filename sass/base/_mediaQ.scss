@@ -29,6 +29,12 @@
       grid-gap: 25px;
     }
   }
+  .reserv button {
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding: 1rem 1.5rem;
+    box-shadow: black 4px 7px 16px -3px;
+  }
 }
 
 @include phone-to-tablet {
