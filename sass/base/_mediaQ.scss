@@ -4,6 +4,7 @@
   }
   .tuto ol {
     flex-direction: column;
+    padding-right: 1rem;
   }
 }
 @include tablet-to-desktop {
@@ -11,7 +12,10 @@
     width: auto;
   }
   .tuto {
-    padding: 0 1rem;
+    padding: 0 0rem;
+    .tuto ol {
+      padding-right: 1rem;
+    }
   }
   .menus {
     padding: 1rem 1rem;
