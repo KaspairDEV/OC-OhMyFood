@@ -132,9 +132,19 @@ header #logo {
         }
       }
       h2 {
+        position: relative;
         margin-top: 35px;
         text-transform: uppercase;
         font-weight: 300;
+        &:after {
+          content: "";
+          width: 3.5rem;
+          height: 0.25rem;
+          background-color: $blue;
+          position: absolute;
+          left: 0;
+          bottom: -0.5rem;
+        }
       }
       .card {
         background-color: #fff;
@@ -172,7 +182,7 @@ header #logo {
           transition: transform 500ms;
         }
         .fa-check-container {
-          background-color: #99e2d0;
+          background-color: $blue;
           position: absolute;
           right: -80px;
           top: 0;
@@ -188,7 +198,7 @@ header #logo {
             background-color: #fff;
             @include flexcenter;
             .fa-check {
-              color: #99e2d0;
+              color: $blue;
               font-size: 13px;
               transition: transform 500ms;
             }
@@ -267,3 +277,12 @@ header #logo {
     }
   }
 }
+// #main-container main .sections-wrapper h2:after {
+//   content: "";
+//   width: 3.5rem;
+//   height: 0.25rem;
+//   background-color: #99e2d0;
+//   position: absolute;
+//   left: 0;
+//   bottom: -0.5rem;
+// }
